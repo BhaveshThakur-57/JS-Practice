@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #face {
+            /* Container for all parts */
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* Key for absolute positioning of children */
+            position: relative;
+        }
+
+        .eye {
+            background-color: black;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            /* Position relative to the #face parent */
+            position: absolute;
+        }
+
+        #eye1 {
+            /* Align eyes neatly */
+            top: 50px;
+            left: 40px;
+        }
+
+        #eye2 {
+            top: 50px;
+            right: 40px;
+            /* Use right instead of left for symmetry */
+        }
+
+        #mouth {
+            background-color: red;
+            height: 40px;
+            width: 120px;
+            position: absolute;
+            left: 40px;
+            top: 120px;
+            border-radius: 0 0 50px 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="face">
+        <div id="eye1" class="eye"></div>
+        <div id="eye2" class="eye"></div>
+
+        <div id="mouth"></div>
+    </div>
+</body>
+
+</html>
